@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/list.js"></script>
+</head>
+<body>
+	<header></header>
+	<div id="wrapper">
+		<div id="banner2">
+			<div class="pic">
+				<a href="javascript:;"><img src="/images/list/banner2.jpg"></a>
+			</div>
+		</div>
+
+		<form action="" class="goodslist">
+			<dl>
+				<dt>手机分类:</dt>
+				<dd>
+					<div class="checkboxs">
+						<a href="javascript:;"><input type="checkbox" name="">全部</a>
+						<a href="javascript:;"><input type="checkbox" name="">智能手机</a>
+						<a href="javascript:;"><input type="checkbox" name="">功能手机</a>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt>手机外观:</dt>
+				<dd>
+					<div class="checkboxs">
+						<a href="javascript:;"><input type="checkbox" name="">全部</a>
+						<a href="javascript:;"><input type="checkbox" name="">触屏</a>
+						<a href="javascript:;"><input type="checkbox" name="">直板</a>
+						<a href="javascript:;"><input type="checkbox" name="">翻盖</a>
+					</div>
+				</dd>
+			</dl>
+			<dl>
+				<dt>手机系列:</dt>
+				<dd>
+					<div class="checkboxs">
+						<a href="javascript:;"><input type="checkbox" name="">全部</a>
+						<a href="javascript:;"><input type="checkbox" name="">M系列</a>
+						<a href="javascript:;"><input type="checkbox" name="">S系列</a>
+						<a href="javascript:;"><input type="checkbox" name="">天鉴系列</a>
+						<a href="javascript:;"><input type="checkbox" name="">F系列</a>
+						<a href="javascript:;"><input type="checkbox" name="">金刚系列</a>
+						<a href="javascript:;"><input type="checkbox" name="">其他机型</a>
+					</div>
+				</dd>
+			</dl>
+			<dl class="lastdl">
+				<dt>排序方式:</dt>
+				<dd>
+					<div class="checkboxs">
+						<a href="javascript:;"><input type="checkbox" name="">上架时间</a>
+						<a href="javascript:;"><input type="checkbox" name="">价格</a>
+						<a href="javascript:;"><input type="checkbox" name="">销量</a>
+					</div>
+					<div class="sale">
+						<a href="javascript:;"><input type="checkbox" name="">显示在线售品</a>
+					</div>
+				</dd>
+			</dl>									
+		</form>
+		<!-- 选项分类-->
+		<!-- <div class="phones">
+			<ul class="phonelists">
+				<li>
+					<a href="javascript:;">
+						<div class="imgs">
+							<img src="/images/index/23.png" alt="">	
+						</div>							
+						<div class="information">
+							<p class="title">S10C</p>
+							<p class="introduce">1600万柔光自拍</p>
+							<p class="price"><span>￥</span>1399</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+			</ul>
+		</div> -->
+		<div class="phones">
+			 <ul class="phonelists">					
+				<script type="text/html" id="right-template">
+					{{each products item i}}
+					<li>
+						<a href="javascript:;">
+							<div class="imgs">
+								<img src="{{item.img}}" alt="">	
+							</div>							
+							<div class="information">
+								<p class="title">{{item.title}}</p>
+								<p class="introduce">{{item.introduce}}</p>
+								<p class="price"><span>￥</span>{{item.price}}</p>
+							</div>
+						</a>
+					</li>
+					{{/each}}
+				</script>
+			</ul> 
+		</div>
+
+		
+	</div>
+	<div class="paging">
+		<div class="page">
+			
+		</div>
+	</div>
+	<div class="space"></div>
+	<footer></footer>
+</body>
+</html>

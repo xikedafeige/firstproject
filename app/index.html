@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<!-- title小图标 -->
+	<link rel="icon" href="picture.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/index.js"></script>
+</head>
+<body>
+	<header></header>
+
+	<!-- banner -->
+	<div id="banner">
+		
+	</div>
+	<!-- starproducts -->
+	<div id="starproducts">
+		<p class="p1">明星产品</p>
+		<ul class="firstlist">
+			<li><a href="javascript:;"><img src="/images/index/18.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="/images/index/19.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="/images/index/20.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<!-- hotproducts -->
+	<div id="hotproducts">
+		<p class="p2">热门推荐</p>
+		<p class="p3"><a href="javascript:;">...更多...</a></p>
+		<div class="wrap">
+			<div class="leftpicture">
+				<a href="javascript:;"><img src="/images/index/21.jpg" alt=""></a>
+			</div>
+
+			<div class="right">
+				<ul class="lists">					
+					<script type="text/html" id="right-template">
+						{{each products item i}}
+						<li>
+							<a href="http://localhost:11111/html/detail.html?id={{item.id}}">
+								<div class="imgs">
+									<img src="{{item.img}}" alt="">	
+								</div>							
+								<div class="information">
+									<p class="title">{{item.name}}</p>
+									<p class="introduce">{{item.introduce}}</p>
+									<p class="price"><span>￥</span>{{item.price}}</p>
+								</div>
+							</a>
+						</li>
+						{{/each}}
+					</script>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer></footer>
+</body>
+</html>

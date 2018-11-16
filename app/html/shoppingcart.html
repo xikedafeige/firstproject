@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/shoppingcart.js"></script>
+</head>
+<body>
+	<header></header>
+
+
+
+	<div class="cart" id="cart">		
+		<table class="cart-header">
+			<tbody>
+				<tr>
+					<td class="cart-select">
+						<div class="select-all">
+							<input type="checkbox" name="">
+							<span>全选</span>
+						</div>
+					</td>
+					<td class="cart-price">单价(元)</td>
+					<td class="cart-number">数量</td>
+					<td class="cart-count">小计(元)</td>
+					<td class="cart-edit">编辑</td>
+				</tr>
+			</tbody>
+		</table>
+		<ul class="cart-list">
+			<li class="cart-li">
+				<table class="cart-body">
+					<script type="text/html" id="temp">
+					{{each products item i}}
+					<tr class="cart-product">
+						<td class="cart-select">
+							<input type="checkbox" name="">
+							<a href="" class="cart-product-link"><img src="{{item.img}}"></a>
+							<a href="" class="cart-product-link2">
+								<p class="name">{{item.title}}</p>
+								<p class="desc">{{item.introduce}}</p>
+							</a>
+						</td>
+						<td class="cart-price">
+							<p class="pr1">￥{{item.num}}</p>
+						</td>
+						<td class="cart-number">
+							<div class="cart-num">
+								<button class="lt">+</button>
+								<input class="mid" type="text" name"" value="{{item.number}}">
+								<button class="rl">-</button>
+							</div>
+						</td>
+						<td class="cart-count">
+							<p class="allpr1">￥{{item.num}}</p>
+						</td>
+						<td class="cart-edit">
+							<div class="cart-remove">删除</div>
+						</td>
+					</tr>
+					{{/each}}
+					</script>
+				</table>
+			</li>
+		</ul>
+		
+	</div>
+
+
+
+	<div class="cart-footer">
+		<div class="left">
+			<div class="all">
+				<input type="checkbox" name="">
+				<span>全选&nbsp;&nbsp;<span>
+				</span>删除选中的商品&nbsp;&nbsp;&nbsp;共2件商品,&nbsp;&nbsp;已选择2件</span>
+			</div>
+		</div>
+		<div class="right">
+			<span class="calc">已优惠0元，合计不含运费：</span>
+			<button class="cal">去结算</button>
+		</div>
+	</div>
+
+
+	<footer></footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>金立手机注册界面</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/register.css">
+	<!-- 验证码css -->
+	<!-- <link rel="stylesheet" href="/libs/jquery.idcode.css"/> -->
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/register.js"></script>
+	<!-- 验证码的jq -->
+	<!-- <script src="/libs/jquery/jquery-1.11.3.js"></script> -->
+	<!-- 验证码js -->
+	<!-- <script src="/libs/jquery.idcode.js"></script> -->
+</head>
+<body>
+	<header></header>
+	<form method="post" action="http://localhost:11111/html/login.html">
+		<div id="outer">
+			<div class="reg">
+				<div class="top">
+					<p>注册<a href="http://localhost:11111/html/login.html">登录</a></p>
+				</div>
+				<div class="middle">
+					<input type="text" name="username"
+					placeholder="请输入手机号" id="telephone">
+					<!-- 验证码 -->
+					<!-- <input type="text" id="Txtidcode" class="txtVerification" placeholder="请输入验证码" /> -->
+					<!-- <span id="idcode"></span> -->
+					<!-- <div>
+					    				<button type="button" id="btn1">验证</button>
+					</div> -->
+					<!-- <input type="text" name="password"
+					placeholder="请输入验证码" class="psd"> -->
+					<!-- <input type="txt" name="Verificationcode" class="Verificationcode">
+					<a href="javascript:;"><span class="change">换一个</span></a> -->
+					<input type="text" name="psd"
+					placeholder="请输入密码" id="psd">
+				</div>
+				<div class="button">
+					<input type="button" name="btn2" id="btn2" value="注册">
+				</div>
+			</div>	
+		</div>
+	</form>
+	<footer></footer>
+</body>
+</html>

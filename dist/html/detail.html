@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/detail.js"></script>
+</head>
+<body>
+	<header></header>
+
+
+	<!-- 详情页模板 -->
+	<div id="detail_wrapper">
+
+		<div class="wrap"></div>
+			
+			<script type="text/html" id="rtemplate">
+				<div class="left">
+					<!-- 小盒子 -->
+					<div class="sbox">
+						<!-- 小图 -->
+						<img  class="bc" src="{{products.img1}}"/>
+						<img src="{{products.img2}}"/>
+						<img src="{{products.img3}}"/>
+						<img src="{{products.img4}}"/>
+						<img src="{{products.img5}}"/>
+						<span class="fdj"></span>
+					</div>
+					<!--  大盒子 --> 
+					<div class="biggest">
+						<!-- 大图 -->
+						<img src="{{products.img1}}" class="bc" />
+						<img src="{{products.img2}}" class="bImg"/>
+						<img src="{{products.img3}}" class="bImg"/>
+						<img src="{{products.img4}}" class="bImg"/>
+						<img src="{{products.img5}}" class="bImg"/>
+					</div>
+					<div class="small">
+						<ul>
+							<li class="bc" data-index="0"><img src="{{products.img5}}" alt=""></li>
+							<li data-index="1"><img src="{{products.img2}}" alt=""></li>
+							<li data-index="2"><img src="{{products.img3}}" alt=""></li>
+							<li data-index="3"><img src="{{products.img4}}" alt=""></li>
+							<li data-index="4"><img src="{{products.img1}}" alt=""></li>
+						</ul>
+					</div>
+					<div class="big">
+						<a href="javascript:;"></a><p class="biger">查看大图</p>
+					</div>
+				</div>
+				<div class="right">
+					<h1 class="title">{{products.title}}</h1>
+					<p class="introduce">{{products.introduce}}</p>
+					<div class="nowprice">
+						<p class="price">
+							<span class="np">现价</span>
+							<em class="symbol">￥</em><span class="num">{{products.num}}</span>
+						</p>
+					</div>
+					<dl class="color">
+						<dt class="phonecolor">颜色</dt>
+						<dd class="pc">
+							<span class="p1">
+								<img class="cc" data-index="0" src="{{products.img6}}"/>
+							</span>
+							<span >
+								<img data-index="1" src="{{products.img7}}"/>
+							</span>
+							<span>
+								<img data-index="2" src="{{products.img8}}"/>
+							</span>
+						</dd> 
+					</dl>
+					<dl class="number">
+						<dt class="phonenumber">购买数量</dt>
+						<dd class="allnumber">
+							<div class="subtraction"></div>
+							<input type="text" name="" value="1">
+							<div class="add"></div>
+						</dd>
+					</dl>
+					<p class="present">购买F6赠送：豆芽耳机+USB台灯（蓝色）+指环支架</p>
+					<div class="allprice">
+						<span class="share">分享到:</span>
+						<p><span>您已选择：</span><span class="c1">金立F6&nbsp;&nbsp;&nbsp;星夜蓝</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1">件&nbsp;&nbsp;&nbsp;总计：¥</span><span class="c1">1399元</span></p>
+						<div class="expireshop">加入购物车</div>
+						<a class="ctn" href="http://localhost:11111/html/shoppingcart.html">查看购物车</a>
+					</div>
+				</div>
+			
+			</script>
+		
+		
+	</div>
+
+
+	<footer></footer>
+</body>
+</html>

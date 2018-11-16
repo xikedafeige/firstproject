@@ -1,0 +1,138 @@
+$fl:left;
+$fr:right;
+$bc:red;
+
+#wrapper{
+	background:#f0f0f0;
+	#banner2{
+		width: 100%;
+		height: 352px;
+		background:#f0f0f0;
+		margin-bottom: 17px;
+		.pic{
+			width: 1192px;
+			height: 352px;
+			margin:0 auto;
+		}
+	}
+	.goodslist{
+		width: 1190px;
+		height: 220px;
+		margin: 0 auto;
+		background: white;
+		dl{
+			width: 1150px;
+			height: 55px;
+			line-height: 28px;
+		    border-bottom: 1px solid #e9e9e9;
+		    clear: both;
+		    font-size: 14px;
+		    padding: 13px 0;
+		    margin: 0 20px;
+		    position: relative;
+		    dt{
+		    	width: 78px;
+		    	float: $fl;
+		    }
+		    dd{
+				float: $fl;
+				width: 750px;
+				height: 28px;
+				.checkboxs{
+					width: 100%;
+					a{
+						margin-right: 20px;
+					    line-height: 28px;
+					    position: relative;
+					    padding-left: 18px;
+					    cursor: pointer;
+					    display: inline-block;
+					    input{
+							vertical-align: middle;
+					    }
+					}
+				}
+				.sale{
+				    position: absolute;
+				    right: 0px;
+				    top: 12px;
+				    padding-left: 20px;
+				    input{
+				    	vertical-align: middle;
+				    }
+				}
+	    	}
+		}
+	}
+	.phones{
+		width: 1188px;
+		height: 800px;
+		margin: 0 auto;
+		overflow: hidden;
+		ul{
+			padding-bottom: 30px;
+		    border-top: 3px solid #DDDDDD;
+		    margin-top: -1px;
+			li{
+				width: 295px;
+				height: 390px;
+				float: $fl;
+				margin-right: 2px;
+				margin-bottom: 5px;
+				background: white;
+				a{
+					display: block;
+					height: 100%;
+					width: 100%;
+					.imgs{
+						width: 280px;
+						height: 290px;
+						img{
+							width: 130px;
+							height: 250px;
+							margin-top: 23px;
+							margin-left: 90px;							
+						}
+					}
+					.information{
+						text-align: center;
+						.title{
+							font-size: 17px;
+							height: 30px;
+							color:#0f0e0e ;
+						}
+						.introduce{
+							font-size: 14px;
+							color: #9d9d9d;
+						}
+						.price{
+							font-size: 21px;
+							color: #fd6908;
+							margin-top: 10px;
+							span{
+								font-size: 16px;
+								padding-right:6px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.paging{
+	width: 100%;
+	height: 76px;
+	background: #f0f0f0;
+	.page{
+		margin:0 auto;
+		width: 1192px;
+		height: 76px;
+		background: white;
+	}
+}
+.space{
+	height: 40px;
+	width: 100%;
+	background: #f0f0f0;
+}

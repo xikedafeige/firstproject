@@ -1,0 +1,112 @@
+$fl:left;
+$fr:right;
+$bc:red;
+/* reset  */
+*{margin: 0; padding: 0;box-sizing : border-box}
+li{list-style: none;}
+a{text-decoration:none;}
+
+
+/* page */
+#outer{
+	width: 1080px;
+    height: 665px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background: url("/images/register/bg.jpg") -373px no-repeat center;
+    .reg{
+		background: #fcfcfc;
+		width: 346px;
+		height: 542px;
+		margin-top: 65px;
+		margin-left: 690px;
+		border-radius: 5%;
+		.top{
+			width: 346px;
+			height: 202px;
+			background: pink;
+			background: url("/images/register/logo.png")no-repeat center;
+			overflow: hidden;
+			p{
+				height: 20px;
+				width: 100%;
+				margin-top: 180px;
+				padding-left:45px;
+				color:#fd9d0d;
+				a{
+					font-size: 12px;
+					float: $fr;
+					display: block;
+					width: 129px;
+					height: 20px;
+					margin-right: 36px;
+					color: #878787;
+					padding-top: 3px;
+					padding-right: 5px;
+					background: url("/images/register/icon_grey.png") no-repeat 100px center;
+					cursor: pointer;
+				}
+			} 
+		}
+		.middle{
+			margin-top:63px ;
+			height: 115px;
+			text-align: center;
+			input{
+				width: 288px;
+				height: 37px;
+				border-radius:5%;
+				margin-bottom: 20px;
+				border:none;
+				padding:0 6px;
+				border:1px solid #ccc;
+				outline:none;
+			}
+			.txtVerification{
+					width: 140px;
+					height: 37px;
+					float: $fl;
+					margin-left: 30px;
+				}
+			/* .Verificationcode{
+				float: $fl;
+				margin-left: 15px;
+				width: 60px;
+				height: 35px;
+			} */
+			#idcode{
+				display: inline-block;
+				width: 94px;
+				height: 20px;
+				float: $fl;
+				font-size: 12px;
+				margin-top: 10px;
+				font-size: 12px;
+				margin-left: 10px;
+			}
+			#btn1{
+				float: $fr;
+				margin-top: 8px;
+				margin-right: 30px;
+			}
+
+		}
+		.button{
+			height: 67px;
+			padding-top: 20px;
+			#btn2{
+				width: 280px;
+				height: 48px;
+				border-radius:5%;
+				background: #fe9a1f;
+				border:none;
+				margin-left: 35px;
+				color:white ;
+				font-size: 15px;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+    }
+}
+ 

@@ -1,0 +1,128 @@
+$fl:left;
+$fr:right;
+$bc:red;
+/* reset  */
+*{margin: 0; padding: 0;box-sizing : border-box}
+li{list-style: none;}
+a{text-decoration:none;}
+
+
+/* page */
+#outer{
+	width: 1080px;
+    height: 665px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background: url("/images/register/bg.jpg") -373px no-repeat center;
+    .reg{
+		background: #fcfcfc;
+		width: 346px;
+		height: 542px;
+		margin-top: 65px;
+		margin-left: 690px;
+		border-radius: 5%;
+		.top{
+			width: 346px;
+			height: 202px;
+			background: pink;
+			background: url("/images/register/logo.png")no-repeat center;
+			overflow: hidden;
+			p{
+				height: 20px;
+				width: 100%;
+				margin-top: 180px;
+				padding-left:45px;
+				color:#fd9d0d;
+				a{
+					font-size: 12px;
+					float: $fr;
+					display: block;
+					width: 129px;
+					height: 20px;
+					margin-right: 36px;
+					color: #878787;
+					padding-top: 3px;
+					padding-right: 5px;
+					background: url("/images/register/icon_grey.png") no-repeat 100px center;
+					cursor: pointer;
+				}
+			} 
+		}
+		.middle{
+			margin-top:63px ;
+			height: 115px;
+			text-align: center;
+			input{
+				width: 288px;
+				height: 47px;
+				border-radius:5%;
+				margin-bottom: 20px;
+				border:none;
+				padding:0 6px;
+				border:1px solid #ccc;
+				outline:none;
+			}
+		}
+		.qq{
+			height: 28px;
+			padding-top: 8px;
+			a{
+				display: block;
+				width: 15px;
+				height:23px;
+				cursor: pointer;
+				float: $fr;
+				margin-right: 31px;
+			}
+		}
+		.avoidlogin{
+			margin-top: 15px;
+			height: 20px;
+			color:#bababa;
+			font-size:12px ;
+			line-height: 20px;
+			padding-left: 20px;
+			padding-right: 30px;
+			input{
+				vertical-align: middle;
+				
+			}
+			label{
+					margin-left: 5px;
+				}
+			a{
+				display: block;
+				float:$fr;
+				font-size: 12px;
+				color:#bababa ;
+			}
+		}
+		.button{
+			height: 67px;
+			padding-top: 20px;
+			#btn{
+				width: 280px;
+				height: 48px;
+				border-radius:5%;
+				background: #fe9a1f;
+				border:none;
+				margin-left: 35px;
+				color:white ;
+				font-size: 15px;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+		.bottom{
+			font-size: 12px;
+			text-align: center;
+			padding-top: 6px;
+			a{
+				color: #fe8f0d;
+				text-decoration: underline;
+				margin-left: 10px;
+			}
+		}
+    }
+}
+ 
